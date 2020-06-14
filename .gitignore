@@ -8,6 +8,9 @@ src/
 
 # Config
 config.ini
+# Do not commit credentials!
 config.json
 .DS_Store
 tweetStats.sh
+# venv does not belong into the repo:
+venv/

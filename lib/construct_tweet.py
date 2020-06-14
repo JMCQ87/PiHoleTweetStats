@@ -61,9 +61,9 @@ def build_tweets(api_pihole, ipstack_key):
     print("Pi-hole Tweet Made")
     SY_tweet = SYtweet(si())
     print("System Tweet Made")
-    NET_tweet =  NETtweet(sip(ipstack_key))
-    print("Speedtest Tweet Made")
+    # NET_tweet =  NETtweet(sip(ipstack_key))
+    # print("Speedtest Tweet Made")
 
-    tweets = [PH_tweet, SY_tweet, NET_tweet]
+    tweets = [PH_tweet, SY_tweet]
 
     return(tweets)

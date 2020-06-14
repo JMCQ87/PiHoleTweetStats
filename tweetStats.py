@@ -4,14 +4,17 @@
 # Tweet it!
 def tweet_it():
 
-    from lib.commom import keysANDapi, ipstack_key, rpi, bt
+    from lib.common import keysANDapi, ipstack_key, rpi, bt
 
     # actually make tweets
     tweets = bt(rpi, ipstack_key)
 
     # used to send tweets
     from threader import Threader
-    
+
+    # Limit Tweet length, in case one is too long.
+    tweets = [tweet[:279] for tweet in tweets]
+
     # send tweets
     th = Threader(tweets, keysANDapi, wait=2, end_string=False)
     th.send_tweets()

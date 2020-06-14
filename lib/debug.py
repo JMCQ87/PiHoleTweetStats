@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from lib.commom import k_a, rpia, ipstack_key, rpi, phs, cips, bt
+from lib.common import k_a, rpia, ipstack_key, rpi, phs, cips, bt
 
 # from lib.pihole_info import combinator as pi # where pihole information is gathered
 from lib.sys_info import sys_info as si # where system information is gathered

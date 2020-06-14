@@ -23,8 +23,8 @@ def get_cfg():
 # verify && set key info from config.json
     cfgP = cfg['pihole']
     try: # try to get api_path for pi-hole
-        api1 = cfgP['api_path_1']
-        api2 = cfgP['api_path_2']
+        api1 = cfgP['api_path']
+        api2 = cfgP['api_path']
     except KeyError as e:
         print(str(e) + '\nPi-hole web API address is missing.')
         raise SystemExit
